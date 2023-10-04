@@ -1,5 +1,102 @@
-*{  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*crear variables*/
+.colorVerde {
+  color: rgb(167, 232, 167);
 }
+
+.tamanioChico {
+  font-size: 0.8em;
+}
+
+.box {
+  background-color: rgb(197, 184, 43);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(197, 184, 43);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.container .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container .navbar .logo {
+  width: 100px;
+}
+.container .navbar .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+.container .navbar .menu .menu-item {
+  list-style: none;
+}
+.container .navbar .menu .menu-item a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  /*hover*/
+}
+.container .navbar .menu .menu-item a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    /*nada*/
+  }
+  .container .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container .navbar .menu {
+    justify-content: center;
+    width: 200px;
+  }
+  .container .navbar .menu .menu-item a {
+    color: #f60101;
+    padding: 5px;
+    /*hover*/
+  }
+  .container .navbar .menu .menu-item a:hover {
+    color: #fff;
+    background-color: #272525;
+  }
+}
+.main {
+  background-color: rgb(197, 184, 43);
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
